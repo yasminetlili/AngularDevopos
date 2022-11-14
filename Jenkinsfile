@@ -1,10 +1,10 @@
-properties([pipelineTriggers([githubPush()])])
+
 
 pipeline {
     agent any
     tools { nodejs "NodeJS" }
     environment { 
-        registry = "majdimsallem/frontf" 
+        registry = "yasminetlili/frontf" 
         registryCredential = 'dockerhub_id' 
 	
 	dockerImage = '' 
@@ -16,7 +16,7 @@ pipeline {
 
                 echo 'Pulling...';
                 git branch: 'master',
-                url : 'https://github.com/Majdi-msallem/AngularDevops.git';
+                url : 'https://github.com/yasminetlili/AngularDevopos';
             }
         }
 	    
@@ -81,7 +81,7 @@ pipeline {
 
     }
   
-    post {
+    /*post {
             always{
                 
                 emailext to: "majdi.msallem@esprit.tn",
@@ -92,5 +92,5 @@ pipeline {
             }
         }	
 
-
+*/
 }

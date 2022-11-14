@@ -3,7 +3,7 @@ services:
 
 
   angulardevopsf:
-    image: majdimsallem/frontf:27
+    image: yasminetlili/frontf:1
     container_name: angulardevopsf
     env_file: ./.env
     ports:
