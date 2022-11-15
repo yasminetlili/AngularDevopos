@@ -18,8 +18,8 @@
     "module": "es2020",
     "lib": [
       "es2018",
-      "dom"
-    ]
+      "dom"],
+      "types": ["node"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -28,3 +28,4 @@
     "strictTemplates": true
   }
 }
+
